@@ -1,0 +1,18 @@
+=================================================================================
+Human Activity Recognition Using Smartphones Assignment
+=================================================================================
+
+Explanation of the dataset is provided in the README file
+The script run_analysis.R does the following:
+
+1- Set the working directory to the right one
+2- Read the training and test datasets
+3- Merge the training and test datasets in mergedata
+4- Change the name of the columns in mergedata to the features' names
+5- Find the names of the features that contain mean or std and save then in targetnames
+6- Create a new table from mergedata with the appropriate values (only features with mean or std), and save it in meanStd
+7- Merge train and test labels, and save it in mergelabels
+8- Change the names of the labels in mergelabels based on the names presented in activity_labels 
+9- Create a file with tidy data, and save it in tidy_data
+10- Save the data in .txt file called tidy_data.txt
+11- Create an independent tidy dataset with the average of each variable for each activity and each subject, and save it in a csv file called Results_mean.csv
