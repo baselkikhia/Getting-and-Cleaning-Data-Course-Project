@@ -14,11 +14,11 @@ The same logic goes to X_train, Y_train, and Subject_train. The train data has 7
 - features.txt: List of all features.
 - activity_labels.txt: Links the class labels with their activity name.
 
-- Tidy_data.txt: this file has the merged data from the train and the test data sets. It has 10299 observations. 
+- tidy_data.txt: this file has the merged data from the train and the test data sets. It has 10299 observations. 
 Tidy_data has been modified to have a column called “Person_ID” (it refers to the person who performed the activity), and a column 
 called “Activity” (it refers to the performed activity). The rest of the columns are features that has mean or std calculation. 
 Tidy_data.txt  has 10299 observations with 81 variables (Person_ID, Activity, and 79 features)
 
-- Results_mean.csv contains the average of each variable from Tidy_data.txt for each activity and each subject.
+- Results_mean.txt contains the average of each variable from tidy_data.txt for each activity and each subject.
 
 

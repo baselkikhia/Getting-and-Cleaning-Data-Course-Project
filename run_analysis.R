@@ -32,7 +32,7 @@ run_analysis <- function()
   #find the names of the features that contain mean or std
  targetnames <- grep (".*mean.*|.*std.*", names(mergedata),value = TRUE)
   
-  #create a a new table from mergedata with the appropriate values (only features with mean or std)
+  #create a new table from mergedata with the appropriate values (only features with mean or std)
   meanStd <- data.table(mergedata[,targetnames])
   
   #now meanStd has the right columns names
@@ -75,7 +75,7 @@ run_analysis <- function()
  # We put x[,3:81] to ignore the first 2 columns when calculating the mean (the first 2 columns are Person_ID and Activity)
  Results_mean <- ddply(tidy_data, .(Person_ID, Activity), function(x) colMeans(x[,3:81]))
  
- # we can write the final results in a CSV file for readability 
- write.csv(Results_mean, file = "./UCI HAR Dataset/Results/Results_mean.csv")
+ # we can write the final results in a txt file 
+ write.table(Results_mean, "./UCI HAR Dataset/Results/Results_mean.txt")
  
 }

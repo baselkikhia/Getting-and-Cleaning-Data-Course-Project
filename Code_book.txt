@@ -15,4 +15,4 @@ The script run_analysis.R does the following:
 8- Change the names of the labels in mergelabels based on the names presented in activity_labels 
 9- Create a file with tidy data, and save it in tidy_data
 10- Save the data in .txt file called tidy_data.txt
-11- Create an independent tidy dataset with the average of each variable for each activity and each subject, and save it in a csv file called Results_mean.csv
+11- Create an independent tidy dataset with the average of each variable for each activity and each subject, and save it in a txt file called Results_mean.txt
